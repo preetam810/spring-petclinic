@@ -1,9 +1,9 @@
 pipeline {
-    agent { label 'linux' }
+    agent { label 'master' }
     stages {
         stage ('Checkout') {
           steps {
-            git 'https://github.com/effectivejenkins/spring-petclinic.git'
+            git 'https://github.com/preetam810/spring-petclinic.git'
           }
         }
         stage('Build') {
